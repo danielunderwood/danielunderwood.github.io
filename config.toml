@@ -1,0 +1,28 @@
+baseURL = 'https://danielunderwood.dev'
+languageCode = 'en-us'
+theme = 'risotto'
+title = 'danielunderwood.dev'
+
+[params]
+
+[params.theme]
+palette = "custom"
+mode = "dark-mode"
+
+# Sidebar: about/bio
+[params.about]
+#title = "danielunderwood.dev"
+#description = "My personal website"
+
+[[params.socialLinks]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/danielunderwood"
+
+[menu]
+
+#  [[menu.main]]
+#    identifier = "about"
+#    name = "About"
+#    url = "/about/"
+#    weight = 10
