@@ -7,16 +7,19 @@
     {{ range .Pages }}
     <article class="post">
         <header class="post__header">
-            <h1><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
-            <p class="post__meta">
-                {{ .Params.author }},
-                <span class="date">{{ .Date.Format "2 January 2006" }}</span>
-            </p>
+            <h1>
+                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+                <div class="post__meta">
+                    {{ .ReadingTime }} minute{{ if .ReadingTime | gt 1 }}s{{ end }} read from <span class="date">{{ .Date.Format "2 January 2006" }}</span>
+                {{ if .Draft }} <i>(unpublished)</i> {{ end }}
+            </div>
+            </h1>
+            <div class="tag-list">{{ range .Params.Tags }}<div class="post-tag">{{ . }}</div> {{ end }}</div>
         </header>
 
-        <section class="post__summary">
+        <!-- <section class="post__summary">
             {{ .Summary }}
-        </section>
+        </section> -->
     </article>
     {{ end }}
 {{ end }}

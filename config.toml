@@ -18,6 +18,11 @@ icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/danielunderwood"
 
+[[params.socialLinks]]
+icon = "fa fa-envelope"
+title = "Email"
+url = "mailto:hello@danielunderwood.dev"
+
 [menu]
 
 #  [[menu.main]]
@@ -25,3 +30,8 @@ url = "https://github.com/danielunderwood"
 #    name = "About"
 #    url = "/about/"
 #    weight = 10
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/post/"

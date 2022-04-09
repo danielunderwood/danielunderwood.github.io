@@ -1,1 +1,26 @@
 /* Override this file to customise the theme's CSS for your site */
+.tag-list {
+    display: flex;
+}
+
+.post-tag::before {
+    content: "#";
+    font-size: small;
+}
+.post-tag {
+    padding-left: 1.25em;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    line-height: 10%;
+    text-transform: lowercase;
+    font-size: small;
+}
+
+.date {
+    font-style: italic;
+}
+
+.post__meta {
+    font-size: small;
+    padding-left: 1.25em;
+}
