@@ -35,3 +35,9 @@ url = "mailto:hello@danielunderwood.dev"
   identifier = "posts"
   name = "Posts"
   url = "/post/"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    noClasses = true
+    style = "monokai"
