@@ -35,7 +35,8 @@ start: 'SELECT' NAME { name.string }
 We can try running it:
 
 ```shell
-python -m pegen sqldf/sql.gram -o sqldf/parser.py && python sqldf/parser.py - <<< "SELECT somecol"
+python -m pegen sqldf/sql.gram -o sqldf/parser.py \
+  && python sqldf/parser.py - <<< "SELECT somecol"
 
 Clean Grammar:
   start: 'SELECT' NAME
@@ -52,7 +53,8 @@ selectable: NAME { {'column': name.string} }
 ```
 
 ```shell
-python -m pegen sqldf/sql.gram -o sqldf/parser.py && python sqldf/parser.py - <<< "SELECT 1"
+python -m pegen sqldf/sql.gram -o sqldf/parser.py \
+  && python sqldf/parser.py - <<< "SELECT 1"
 
 Clean Grammar:
   start: select
@@ -72,8 +74,9 @@ selectable: NAME { {'column': name.string} }
   | NUMBER { {'const': float(number.string)} }
 ```
 
-```python
-python -m pegen sqldf/sql.gram -o sqldf/parser.py && python sqldf/parser.py - <<< "SELECT a ,  1, c"
+```shell
+python -m pegen sqldf/sql.gram -o sqldf/parser.py \
+  && python sqldf/parser.py - <<< "SELECT a ,  1, c"
 
 Clean Grammar:
   start: select
@@ -131,9 +134,8 @@ def apply_sql(df, sql):
   
 
 if __name__ == "__main__":
-    iris = pd.read_csv(
-        "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
-    )
+    iris_url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+    iris = pd.read_csv(iris_url)
     reduced = apply_sql(iris, " ".join(sys.argv[1:]))
     print(reduced)
 ```
