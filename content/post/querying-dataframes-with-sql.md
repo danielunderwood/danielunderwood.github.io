@@ -165,6 +165,7 @@ Profit! There are a couple imperfections here, such as `SELECT something AS alia
 ## Filtering
 
 Now that we have basic selects working, let's try conditions. In SQL, this is a where clause, such as the following:
+
 - `WHERE value = 1`
 - `WHERE value = 'string'`
 - `WHERE value > 5`
