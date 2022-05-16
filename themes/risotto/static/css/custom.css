@@ -3,6 +3,14 @@
     display: flex;
 }
 
+.about {
+    max-width: 90rem;
+}
+
+.page {
+    max-width: 90rem;
+}
+
 .post-tag::before {
     content: "#";
     font-size: small;
