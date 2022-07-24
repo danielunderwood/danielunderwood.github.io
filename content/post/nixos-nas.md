@@ -2,7 +2,7 @@
 title: "Building a NixOS-Based NAS"
 date: 2022-07-24
 draft: false
-tags: [nixos]
+tags: [nixos, zfs]
 ---
 
 I recently got around to fixing an old Ubuntu-based NAS that I set up years ago. It was initially set up before I was using configuration management tools like Ansible and had a number of issues that made it nearly refuse to boot. This called for a full reinstall and I thought I'd try to build it all with NixOS given my recent interest in it. I thought I'd use this opportunity to actually set up everything properly (with the caveat of being compatible with my old arrays).
