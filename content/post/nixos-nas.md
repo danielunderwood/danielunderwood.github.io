@@ -11,7 +11,7 @@ I recently got around to fixing an old Ubuntu-based NAS that I set up years ago.
 
 ### ZFS All the Way Down
 
-Since I my old system was ZFS-based, I decided to go with ZFS for all my filesystems. I roughly followed the instructions in the [NixOS wiki][nixos-zfs]:
+Since my old system was ZFS-based, I decided to go with ZFS for all my filesystems. I roughly followed the instructions in the [NixOS wiki][nixos-zfs]:
 
 ```bash
 # Set this to your root partition
