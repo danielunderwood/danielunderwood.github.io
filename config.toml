@@ -41,8 +41,18 @@ url = "/index.xml"
   name = "Posts"
   url = "/post/"
 
+  [[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects"
+
 [markup]
   [markup.highlight]
     codeFences = true
     noClasses = true
     style = "monokai"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # This is needed for <i> tags in markdown unless I can
+      # figure out how to use shortcodes there
+      unsafe = true
