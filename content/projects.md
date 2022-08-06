@@ -9,7 +9,7 @@ where emails are sent out announcing that a vulnerability was added to the list,
 to actually find out what's new.
 
 I realized that I could deploy a feed that parsed the catalog fairly quickly with [Cloudflare Workers](https://workers.cloudflare.com/)
-(_disclaimer: I'm a CloudFlare shareholder_), so I put together the project one afternoon and plan to add additional sources
+(_disclaimer: I'm a Cloudflare shareholder_), so I put together the project one afternoon and plan to add additional sources
 as needed (or feel free to PR your own!).
 
 ### Currently Supported Sources
