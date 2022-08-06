@@ -13,4 +13,4 @@ I realized that I could deploy a feed that parsed the catalog fairly quickly wit
 as needed (or feel free to PR your own!).
 
 ### Currently Supported Sources
-- <a href="https://feeds.danielunderwood.dev/exploited-vulns/feed.xml"><i class="fa fa-rss"></i></a> CISA Exploited Vulnerabilities Catalog
+- <a href="https://feeds.danielunderwood.dev/exploited-vulns/rss.xml"><i class="fa fa-rss"></i></a> CISA Exploited Vulnerabilities Catalog
