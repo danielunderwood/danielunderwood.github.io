@@ -27,8 +27,6 @@ sudo zfs create \
   -o acltype=posixacl \
   -o compression=zstd \
   -o relatime=on \
-  -o mountpoint=/ \
-  -o canmount=on \
   nixos-rpool/nixos
 sudo zfs create nixos-rpool/nixos/nix
 sudo zfs create -o mountpoint=legacy nixos-rpool/nixos/root
