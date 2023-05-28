@@ -2,7 +2,6 @@
 title: "Security Concerns of Build Systems and Pull Requests"
 date: 2023-05-28T13:59:25-04:00
 tags: [cybersecurity, build-systems]
-draft: true
 mermaid: true
 ---
 
